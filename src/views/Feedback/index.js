@@ -1,11 +1,12 @@
 import React, {Component} from "react";
 
-import step from './step2.png';
+import success from './success.png';
+import error from './error.png'
 
-class Step2 extends Component {
+class Step3 extends Component {
     render() {
-        return <img src={step}/>
+        return <img src={this.props.success ? success : error}/>
     }
 }
 
-export default Step2;
+export default Step3;

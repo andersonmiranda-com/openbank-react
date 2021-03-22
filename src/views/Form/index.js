@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 
-import step from './step1.png';
+import step from './step2.png';
 
-class Step1 extends Component {
+class Step2 extends Component {
     render() {
         return <img src={step}/>
     }
 }
 
-export default Step1;
+export default Step2;
