@@ -66,12 +66,12 @@ function WizardForm(props) {
 
     const { pass, repass, hint } = formdata;
     const errors = [];
-    if (!passPattern.test(pass)) errors.push("pass");
-    if (repass != pass) errors.push("repass");
+    if (!passPattern.test(pass) || pass.length === 0) errors.push("pass");
+    if (repass !== pass) errors.push("repass");
     if (hint.length > 255) errors.push("hint");
     setFormErrors(errors);
 
-    if (errors.length == 0) {
+    if (errors.length === 0) {
       //submit data, call backend
       try {
         setFormSending(true);
@@ -223,10 +223,7 @@ function WizardForm(props) {
 
       <div className="row mt-5">
         <div className="col-sm">
-          <button
-            className="btn btn-secondary float-left"
-            onClick={previousStep}
-          >
+          <button className="btn btn-light float-left" onClick={previousStep}>
             <BsChevronLeft />
             Previous
           </button>
@@ -264,6 +261,12 @@ function WizardForm(props) {
           <p>Your password was saved successfully.</p>
           <p>You can start to use your account now.</p>{" "}
           <div className="row mt-5">
+            <div className="col-sm">
+              <button className="btn btn-light float-left" onClick={restart}>
+                <BsChevronLeft />
+                Restart
+              </button>
+            </div>
             <div className="col-sm">
               <button className="btn btn-secondary float-right">
                 Access my account
