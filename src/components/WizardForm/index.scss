@@ -51,6 +51,10 @@
     background-color: #fff;
     padding: 40px;
 
+    a {
+      color: $primary-color;
+    }
+
     .bd-wizard-step-title {
       font-size: 20px;
       font-weight: bold;
@@ -70,16 +74,14 @@
       color: #030303;
     }
 
-    .form-control {
-      padding: 26px 25px;
-      min-height: 50px;
-      max-width: 550px;
-      border-radius: 4px;
-      border: solid 1px #ececec;
+    .successIcon {
+      font-size: 55px;
+      color: $success;
+    }
 
-      &::placeholder {
-        color: #919aa3;
-      }
+    .errorIcon {
+      font-size: 50px;
+      color: $danger;
     }
   }
 
