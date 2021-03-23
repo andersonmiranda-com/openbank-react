@@ -1,6 +1,13 @@
-$primary-color: #FF0049;
-$secondary-color: #002B45;
-$terciary-color: #FFF1E5;
+body {
+  font-family: "Quicksand", sans-serif;
+}
 
-$white: #FFFFFF;
+$primary-color: #ff0049;
+$secondary-color: #002b45;
+$terciary-color: #fff1e5;
+
+$white: #ffffff;
 $black: #000000;
+
+$secondary: $primary-color;
+@import "~bootstrap/scss/bootstrap.scss";
