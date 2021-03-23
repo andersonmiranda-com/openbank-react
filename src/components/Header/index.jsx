@@ -1,9 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import OpenbankLogo from "../../assets/img/logo_openbank.png";
 import "./index.scss";
 
 function Header(props) {
+  const { t, i18n } = useTranslation();
+  const setLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   return (
     <header>
       <nav className="navbar navbar-expand-sm navbar-light">
@@ -25,18 +30,13 @@ function Header(props) {
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Home
+                <a className="nav-link" href="#" onClick={setLanguage("en")}>
+                  EN
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contact
+                <a className="nav-link" href="#" onClick={setLanguage("es")}>
+                  ES
                 </a>
               </li>
             </ul>

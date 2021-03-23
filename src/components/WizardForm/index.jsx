@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import resources from "../../locale/resources.json";
 
 import { BsChevronLeft } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
@@ -11,6 +13,7 @@ import { submitForm } from "../../services/api";
 
 function WizardForm(props) {
   //state variables
+  const [t, i18n] = useTranslation();
   const [step, setStep] = useState(0);
   const [consent, setConsent] = useState(false);
   const [formErrors, setFormErrors] = useState([]);
@@ -95,15 +98,15 @@ function WizardForm(props) {
 
   const step1 = (
     <section>
-      <h2 className="section-heading">Welcome!</h2>
-      <p>
-        Thank you for choosing <strong>"Cuenta Corriente OpenClose"</strong>.
-      </p>
+      <h2 className="section-heading">{t("Welcome!")}</h2>
+      <p>{t('Thank you for choosing "Cuenta Corriente OpenClose".')}</p>
 
       <p>
-        In the next steps we will you provide some information and you will be
-        ask the set up your password.
+        {t(
+          "In the next steps we will you provide some information and you will be asked to set up your password."
+        )}
       </p>
+
       <br />
       <div className="form-check mt-5">
         <input
@@ -117,8 +120,10 @@ function WizardForm(props) {
 
         <label for="consent" className="form-check-label text-small">
           <small>
-            I am of legal age and I accept that my data be treated according to
-            the data <a href="#">privacy policy</a>.
+            {t(
+              "I am of legal age and I accept that my data be treated according to the"
+            )}
+            <a href="#"> {t("privacy police")}</a>.
           </small>
         </label>
       </div>
@@ -132,7 +137,7 @@ function WizardForm(props) {
             onClick={nextStep}
             disabled={!consent}
           >
-            Next <BsChevronRight />
+            {t("Next")} <BsChevronRight />
           </button>
         </div>
       </div>
@@ -141,7 +146,7 @@ function WizardForm(props) {
 
   const step2 = (
     <section>
-      <h2 className="section-heading">Password setup</h2>
+      <h2 className="section-heading">{t("Password setup")}</h2>
 
       <p>
         First, you need setup your password: <br />
