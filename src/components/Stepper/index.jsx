@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./index.scss";
+
 function Stepper(props) {
   const steps = [1, 2, 3];
   return (
