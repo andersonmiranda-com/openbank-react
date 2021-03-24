@@ -1,6 +1,6 @@
 ## Openbank-react
 
-This is the React version of a small sample of a 3 steps wizard with form validation, backend simulation and translation to EN/ES.
+This is the React version of a 3 steps wizard with form validation, backend simulation and translation to EN/ES.
 
 ### Online Demo
 

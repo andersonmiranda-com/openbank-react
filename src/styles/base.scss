@@ -6,8 +6,10 @@ $primary-color: #ff0049;
 $secondary-color: #002b45;
 $terciary-color: #fff1e5;
 
+$primary-light: #fcb2c7;
+
 $white: #ffffff;
 $black: #000000;
 
-$secondary: $primary-color;
+$secondary: $secondary-color;
 @import "~bootstrap/scss/bootstrap.scss";
