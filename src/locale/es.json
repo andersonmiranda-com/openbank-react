@@ -2,7 +2,9 @@
   "translation": {
     "Welcome!": "¡Bienvenido!",
     "Thank you for choosing \"Cuenta Corriente OpenClose\".": "Gracias por elegir \"Cuenta Corriente OpenClose\".",
-    "In the next steps we will you provide some information and you will be asked to set up your password.": "En los siguientes pasos, le proporcionaremos cierta información y se le pedirá que configure su contraseña.",
+    "Your account is almost ready to be used.": "Su cuenta está casi lista para ser utilizada.",
+    "In the next steps, we will guide you to complete your account creation by setting up your password.": "En los siguientes pasos, lo guiaremos para completar la creación de su cuenta configurando su contraseña.",
+    "To start, please agree with the terms and click \"Next\" button.": "Para empezar, acepte los términos y haga clic en el botón \"Siguiente\".",
     "I am of legal age and I accept that my data be treated according to the": "Soy mayor de edad y acepto que mis datos sean tratados conforme a la",
     "privacy police": "política de privacidad",
     "Next": "Siguiente",

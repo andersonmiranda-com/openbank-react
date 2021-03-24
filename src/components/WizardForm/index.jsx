@@ -101,10 +101,16 @@ function WizardForm(props) {
       <h2 className="section-heading">{t("Welcome!")}</h2>
       <p>{t('Thank you for choosing "Cuenta Corriente OpenClose".')}</p>
 
+      <p>{t("Your account is almost ready to be used.")}</p>
+
       <p>
         {t(
-          "In the next steps we will you provide some information and you will be asked to set up your password."
+          "In the next steps, we will guide you to complete your account creation by setting up your password."
         )}
+      </p>
+
+      <p>
+        {t('To start, please agree with the terms and click "Next" button.')}
       </p>
 
       <br />
