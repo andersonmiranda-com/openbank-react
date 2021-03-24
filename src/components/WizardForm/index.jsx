@@ -138,11 +138,11 @@ function WizardForm(props) {
       </div>
 
       <div className="row mt-2">
-        <div className="col-sm"></div>
+        <div className="col-6"></div>
 
-        <div className="col-sm">
+        <div className="col-6">
           <button
-            className="btn btn-secondary float-right"
+            className="btn btn-sm btn-secondary float-right"
             onClick={nextStep}
             disabled={!consent}
           >
@@ -239,16 +239,19 @@ function WizardForm(props) {
       </form>
 
       <div className="row mt-5">
-        <div className="col-sm">
-          <button className="btn btn-light float-left" onClick={previousStep}>
+        <div className="col-6">
+          <button
+            className="btn btn-sm btn-light float-left"
+            onClick={previousStep}
+          >
             <BsChevronLeft />
             {t("Previous")}
           </button>
         </div>
 
-        <div className="col-sm">
+        <div className="col-6">
           <button
-            className="btn btn-secondary float-right"
+            className="btn btn-sm btn-secondary float-right"
             onClick={checkPassword}
             disabled={formSending}
           >
@@ -278,14 +281,17 @@ function WizardForm(props) {
           <p>{t("Your password was saved successfully")}.</p>
           <p>{t("You can start to use your account now")}.</p>
           <div className="row mt-5">
-            <div className="col-sm">
-              <button className="btn btn-light float-left" onClick={restart}>
+            <div className="col-6">
+              <button
+                className="btn btn-sm btn-light float-left"
+                onClick={restart}
+              >
                 <BsChevronLeft />
                 {t("Restart")}
               </button>
             </div>
-            <div className="col-sm">
-              <button className="btn btn-secondary float-right">
+            <div className="col-6">
+              <button className="btn btn-sm btn-secondary float-right">
                 {t("Access my account")}
                 <BsChevronRight />
               </button>
@@ -303,9 +309,9 @@ function WizardForm(props) {
             {t("Was not possible save your password. Please try agian later.")}
           </p>
           <div className="row mt-5">
-            <div className="col-sm">
+            <div className="col-6">
               <button
-                className="btn btn-secondary float-left"
+                className="btn btn-sm btn-secondary float-left"
                 onClick={restart}
               >
                 <BsChevronLeft />
