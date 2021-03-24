@@ -1,0 +1,29 @@
+{
+  "translation": {
+    "Welcome!": "Welcome!",
+    "Thank you for choosing \"Cuenta Corriente OpenClose\".": "Thank you for choosing \"Cuenta Corriente OpenClose\".",
+    "In the next steps we will you provide some information and you will be asked to set up your password.": "In the next steps we will you provide some information and you will be asked to set up your password.",
+    "I am of legal age and I accept that my data be treated according to the": "I am of legal age and I accept that my data be treated according to the",
+    "privacy police": "privacy police",
+    "Next": "Next",
+    "Password setup": "Password setup",
+    "First, you need to set up your password": "First, you need to set up your password",
+    "(It must contains from 8 to 24 characters and at least 1 capital letter and 1 number ask the set up your password)": "(It must contains from 8 to 24 characters and at least 1 capital letter and 1 number ask the set up your password)",
+    "Password": "Password",
+    "Invalid password": "Invalid password",
+    "Confirm password": "Confirm password",
+    "Passwords does not match": "Passwords does not match",
+    "You can also create a hint to help you remember your password": "You can also create a hint to help you remember your password",
+    "Hint": "Hint",
+    "Hint too long": "Hint too long",
+    "Previous": "Previous",
+    "Congratulations!": "Congratulations!",
+    "Your password was saved successfully": "Your password was saved successfully",
+    "You can start to use your account now": "You can start to use your account now",
+    "Restart": "Restart",
+    "Access my account": "Access my account",
+    "An error was occurred": "An error was occurred",
+    "Was not possible save your password. Please try agian later.": "Was not possible save your password. Please try agian later.",
+    "Try again": "Try again"
+  }
+}

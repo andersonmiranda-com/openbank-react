@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import resources from "../../locale/resources.json";
 
 import { BsChevronLeft } from "react-icons/bs";
 import { BsChevronRight } from "react-icons/bs";
@@ -12,8 +11,9 @@ import Stepper from "../Stepper";
 import { submitForm } from "../../services/api";
 
 function WizardForm(props) {
-  //state variables
+  //language setup
   const [t, i18n] = useTranslation();
+  //state variables
   const [step, setStep] = useState(0);
   const [consent, setConsent] = useState(false);
   const [formErrors, setFormErrors] = useState([]);
@@ -149,17 +149,18 @@ function WizardForm(props) {
       <h2 className="section-heading">{t("Password setup")}</h2>
 
       <p>
-        First, you need setup your password: <br />
+        {t("First, you need to set up your password")}: <br />
         <small>
-          (It must cointains from 8 to 24 characters and at least 1 capital
-          letter and 1 number ask the set up your password)
+          {t(
+            "(It must contains from 8 to 24 characters and at least 1 capital letter and 1 number ask the set up your password)"
+          )}
         </small>
       </p>
       <form>
         <div className="form-row">
           <div className="col-md-6 mb-3">
             <label for="pass" className="sr-only">
-              Password
+              {t("Password")}
             </label>
             <input
               type="password"
@@ -171,16 +172,16 @@ function WizardForm(props) {
                   ? "form-control is-invalid"
                   : "form-control"
               }
-              placeholder="Password"
+              placeholder={t("Password")}
               onChange={handleInputChange}
             />
             <small className={formHasError("pass") ? "text-danger" : "d-none"}>
-              Invalid password
+              {t("Invalid password")}
             </small>
           </div>
           <div className="col-md-6">
             <label for="repass" className="sr-only">
-              Confirm password
+              {t("Confirm password")}
             </label>
             <input
               type="password"
@@ -192,22 +193,24 @@ function WizardForm(props) {
                   ? "form-control is-invalid"
                   : "form-control"
               }
-              placeholder="Confirm password"
+              placeholder={t("Confirm password")}
               onChange={handleInputChange}
             />
             <small
               className={formHasError("repass") ? "text-danger" : "d-none"}
             >
-              Passwords does not match
+              {t("Passwords does not match")}
             </small>
-          </div>{" "}
+          </div>
         </div>
 
-        <p>You can also create a hint to help you remember your password:</p>
+        <p>
+          {t("You can also create a hint to help you remember your password")}:
+        </p>
 
         <div className="form-group">
-          <label for="phoneNumber" className="sr-only">
-            Hint
+          <label for="hint" className="sr-only">
+            {t("Hint")}
           </label>
           <input
             type="text"
@@ -217,11 +220,11 @@ function WizardForm(props) {
             className={
               formHasError("hint") ? "form-control is-invalid" : "form-control"
             }
-            placeholder="Hint"
+            placeholder={t("Hint")}
             onChange={handleInputChange}
           />
           <small className={formHasError("hint") ? "text-danger" : "d-none"}>
-            Hint too long
+            {t("Hint too long")}
           </small>
         </div>
       </form>
@@ -230,7 +233,7 @@ function WizardForm(props) {
         <div className="col-sm">
           <button className="btn btn-light float-left" onClick={previousStep}>
             <BsChevronLeft />
-            Previous
+            {t("Previous")}
           </button>
         </div>
 
@@ -249,7 +252,7 @@ function WizardForm(props) {
             ) : (
               ""
             )}
-            Next <BsChevronRight />
+            {t("Next")} <BsChevronRight />
           </button>
         </div>
       </div>
@@ -261,20 +264,20 @@ function WizardForm(props) {
       {formSuccess ? (
         <div>
           <h2 className="section-heading">
-            <BsCheckCircle className="successIcon" /> Congratulations!
+            <BsCheckCircle className="successIcon" /> {t("Congratulations!")}
           </h2>
-          <p>Your password was saved successfully.</p>
-          <p>You can start to use your account now.</p>{" "}
+          <p>{t("Your password was saved successfully")}.</p>
+          <p>{t("You can start to use your account now")}.</p>
           <div className="row mt-5">
             <div className="col-sm">
               <button className="btn btn-light float-left" onClick={restart}>
                 <BsChevronLeft />
-                Restart
+                {t("Restart")}
               </button>
             </div>
             <div className="col-sm">
               <button className="btn btn-secondary float-right">
-                Access my account
+                {t("Access my account")}
                 <BsChevronRight />
               </button>
             </div>
@@ -283,10 +286,13 @@ function WizardForm(props) {
       ) : (
         <div>
           <h2 className="section-heading">
-            <BsExclamationDiamond className="errorIcon" /> An error was occurred
+            <BsExclamationDiamond className="errorIcon" />{" "}
+            {t("An error was occurred")}
             :(
           </h2>
-          <p>Was not possible save your password. Please try agian later.</p>
+          <p>
+            {t("Was not possible save your password. Please try agian later.")}
+          </p>
           <div className="row mt-5">
             <div className="col-sm">
               <button
@@ -294,7 +300,7 @@ function WizardForm(props) {
                 onClick={restart}
               >
                 <BsChevronLeft />
-                Try again
+                {t("Try again")}
               </button>
             </div>
           </div>

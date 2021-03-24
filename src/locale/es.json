@@ -1,6 +1,29 @@
 {
-  "step1": {
-    "welcome": "¡Bienvenido!",
-    "thank_for_choosing": "Gracias por elegir <strong>\"Cuenta Corriente OpenClose\"</strong>."
+  "translation": {
+    "Welcome!": "¡Bienvenido!",
+    "Thank you for choosing \"Cuenta Corriente OpenClose\".": "Gracias por elegir \"Cuenta Corriente OpenClose\".",
+    "In the next steps we will you provide some information and you will be asked to set up your password.": "En los siguientes pasos, le proporcionaremos cierta información y se le pedirá que configure su contraseña.",
+    "I am of legal age and I accept that my data be treated according to the": "Soy mayor de edad y acepto que mis datos sean tratados conforme a la",
+    "privacy police": "política de privacidad",
+    "Next": "Siguiente",
+    "Password setup": "Configuración de contraseña",
+    "First, you need to set up your password": "Primero, necesita configurar su contraseña",
+    "(It must contains from 8 to 24 characters and at least 1 capital letter and 1 number ask the set up your password)": "(Debe contener de 8 a 24 caracteres y al menos 1 letra mayúscula y 1 número solicite la configuración de su contraseña)",
+    "Password": "Contraseña",
+    "Invalid password": "Contraseña inválida",
+    "Confirm password": "Confirmar Contraseña",
+    "Passwords does not match": "Las contraseñas no coinciden",
+    "You can also create a hint to help you remember your password": "También puede crear una pista que le ayude a recordar su contraseña:",
+    "Hint": "Pista",
+    "Hint too long": "Pista demasiado larga",
+    "Previous": "Anterior",
+    "Congratulations!": "¡Enhorabuena!",
+    "Your password was saved successfully": "Su contraseña se guardó con éxito",
+    "You can start to use your account now": "Puede comenzar a usar su cuenta ahora",
+    "Restart": "Reiniciar",
+    "Access my account": "Acceder a mi cuenta",
+    "An error was occurred": "Se produjo un error",
+    "Was not possible save your password. Please try agian later.": "No fue posible guardar su contraseña. Por favor, inténtelo de nuevo más tarde.",
+    "Try again": "Intentar otra vez"
   }
 }
