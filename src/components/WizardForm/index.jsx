@@ -108,24 +108,27 @@ function WizardForm(props) {
       </p>
 
       <br />
-      <div className="form-check mt-5">
-        <input
-          type="checkbox"
-          className="form-check-input"
-          id="consent"
-          name="consent"
-          defaultChecked={consent}
-          onChange={toggleConsent}
-        />
 
-        <label for="consent" className="form-check-label text-small">
-          <small>
-            {t(
-              "I am of legal age and I accept that my data be treated according to the"
-            )}
-            <a href="#"> {t("privacy police")}</a>.
-          </small>
-        </label>
+      <div className="form-check mt-5">
+        <form>
+          <input
+            type="checkbox"
+            className="form-check-input"
+            id="consent"
+            name="consent"
+            defaultChecked={consent}
+            onChange={toggleConsent}
+          />
+
+          <label htmlFor="consent" className="form-check-label text-small">
+            <small>
+              {t(
+                "I am of legal age and I accept that my data be treated according to the"
+              )}
+              <a href="#"> {t("privacy police")}</a>.
+            </small>
+          </label>
+        </form>
       </div>
 
       <div className="row mt-2">
@@ -159,7 +162,7 @@ function WizardForm(props) {
       <form>
         <div className="form-row">
           <div className="col-md-6 mb-3">
-            <label for="pass" className="sr-only">
+            <label htmlFor="pass" className="sr-only">
               {t("Password")}
             </label>
             <input
@@ -180,7 +183,7 @@ function WizardForm(props) {
             </small>
           </div>
           <div className="col-md-6">
-            <label for="repass" className="sr-only">
+            <label htmlFor="repass" className="sr-only">
               {t("Confirm password")}
             </label>
             <input
@@ -209,7 +212,7 @@ function WizardForm(props) {
         </p>
 
         <div className="form-group">
-          <label for="hint" className="sr-only">
+          <label htmlFor="hint" className="sr-only">
             {t("Hint")}
           </label>
           <input
