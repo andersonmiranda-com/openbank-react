@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import LocalizationContext from "../../locale/LocalizationContext";
+import "bootstrap/js/src/collapse.js";
 
 import OpenbankLogo from "../../assets/img/logo_openbank.png";
 import "./index.scss";
@@ -30,6 +31,7 @@ function Header(props) {
               <li className="nav-item">
                 <a
                   className="nav-link"
+                  eventKey="1"
                   href="#"
                   onClick={() => i18n.changeLanguage("en")}
                 >
@@ -39,6 +41,7 @@ function Header(props) {
               <li className="nav-item">
                 <a
                   className="nav-link"
+                  eventKey="2"
                   href="#"
                   onClick={() => i18n.changeLanguage("es")}
                 >
