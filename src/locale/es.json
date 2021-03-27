@@ -10,7 +10,7 @@
     "Next": "Siguiente",
     "Password setup": "Configuración de contraseña",
     "First, you need to set up your password": "Primero, necesita configurar su contraseña",
-    "(It must contains from 8 to 24 characters and at least 1 capital letter and 1 number ask the set up your password)": "(Debe contener de 8 a 24 caracteres y al menos 1 letra mayúscula y 1 número solicite la configuración de su contraseña)",
+    "(It must contains from 8 to 24 characters and at least 1 capital letter and 1 number)": "(Debe contener de 8 a 24 caracteres y al menos 1 letra mayúscula y 1 número)",
     "Password": "Contraseña",
     "Invalid password": "Contraseña inválida",
     "Confirm password": "Confirmar Contraseña",
