@@ -161,7 +161,7 @@ function WizardForm(props) {
         {t("First, you need to set up your password")}: <br />
         <small>
           {t(
-            "(It must contains from 8 to 24 characters and at least 1 capital letter and 1 number ask the set up your password)"
+            "(It must contains from 8 to 24 characters and at least 1 capital letter and 1 number)"
           )}
         </small>
       </p>
