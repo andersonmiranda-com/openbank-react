@@ -31,7 +31,7 @@ function Header(props) {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  eventKey="1"
+                  key="1"
                   href="#"
                   onClick={() => i18n.changeLanguage("en")}
                 >
@@ -41,7 +41,7 @@ function Header(props) {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  eventKey="2"
+                  key="2"
                   href="#"
                   onClick={() => i18n.changeLanguage("es")}
                 >

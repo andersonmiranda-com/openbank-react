@@ -131,7 +131,17 @@ function WizardForm(props) {
               {t(
                 "I am of legal age and I accept that my data be treated according to the"
               )}
-              <a href="#"> {t("privacy police")}</a>.
+              <a
+                href={
+                  i18n.language === "es"
+                    ? "https://www.openbank.es/politica"
+                    : "https://www.openbank.es/en/privacy-cookies"
+                }
+                target="_blank"
+              >
+                {t("privacy police")}
+              </a>
+              .
             </small>
           </label>
         </form>
